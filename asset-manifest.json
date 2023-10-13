@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b0c7393.css",
-    "main.js": "/static/js/main.ac40a9c6.js",
-    "index.html": "/index.html",
-    "main.4b0c7393.css.map": "/static/css/main.4b0c7393.css.map",
-    "main.ac40a9c6.js.map": "/static/js/main.ac40a9c6.js.map"
+    "main.css": "/Simple-Linear-Equations-Mentally/static/css/main.4b0c7393.css",
+    "main.js": "/Simple-Linear-Equations-Mentally/static/js/main.ac40a9c6.js",
+    "index.html": "/Simple-Linear-Equations-Mentally/index.html",
+    "main.4b0c7393.css.map": "/Simple-Linear-Equations-Mentally/static/css/main.4b0c7393.css.map",
+    "main.ac40a9c6.js.map": "/Simple-Linear-Equations-Mentally/static/js/main.ac40a9c6.js.map"
   },
   "entrypoints": [
     "static/css/main.4b0c7393.css",
