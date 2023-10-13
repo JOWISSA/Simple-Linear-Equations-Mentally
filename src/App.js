@@ -94,21 +94,32 @@ const randomEquationsLvl1 = () => {
 const App = () => {
   const [equation, setEquation] = useState('');
   const [secret, setSecret] = useState('');
+  const [showSecret, setShowSecret] = useState(false);
 
   const generateEquation = () => {
     const { equations, secret } = randomEquationsLvl1();
     setEquation(equations);
     setSecret(secret);
+    setShowSecret(false);
   };
 
   return (
     <div className="App">
-      <h1>Простые линейные уравнения</h1>
-      <button onClick={generateEquation}>Сгенерировать уравнение</button>
+      <h1>Simple Linear Equations Mentally</h1>
+      <button onClick={generateEquation}>Generate equation</button>
       <div className="equation">{equation}</div>
-      <div className="secret">Секретное значение: {secret}</div>
+      <textarea
+        rows="4"
+        cols="50"
+        placeholder="write your solution here..."
+      />
+      <button onClick={() => setShowSecret(true)}>
+        Show Secret
+      </button>
+      {showSecret && <div className="secret">Secret meaning: {secret}</div>}
     </div>
   );
 };
+
 
 export default App;
