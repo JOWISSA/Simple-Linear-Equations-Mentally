@@ -1,12 +1,21 @@
-Simple Linear Equations Mentally
+Simple Linear Equations Game
 
-This web application generates simple linear equations with one or two variables and allows you to solve them mentally. You can use this application to practice your equation-solving skills without a calculator. Simply input your answer and test your skills!
+DEMO[https://jowissa.github.io/Simple-Linear-Equations-Mentally/]
 
-DEMO [https://jowissa.github.io/Simple-Linear-Equations-Mentally/]
+Welcome to the "Simple Linear Equations Mentally" game! This educational game will help you improve your skills in solving linear equations mentally.
 
-  How to use:
+How to Play
 
-  Step 1 -  Open the application.
-  Step 2 -  Solve the equation mentally.
-  Step 3 -  Input your answer.
-  Step 4 -  Click "Сheck the answer" to see if your answer is correct.
+    1.Click the Generate equation button to generate a new linear equation.
+    2.Solve the equation and enter your answer in the input field.
+    3.Click the Сheck the answer button to verify your answer.
+    4.If your answer is correct, you'll see the message YOU WIN!. Otherwise, the correct answer will be displayed.
+
+Timed Mode
+
+If you want to challenge yourself against the clock, click the Play with Timer button. You'll have 60 seconds to solve as many equations as you can. Each incorrect answer will deduct 1 second from your time, so be careful!
+
+
+This game is utilizes random equations to provide you with diverse challenges.
+
+Enjoy the game and enhance your skills in solving linear equations mentally!

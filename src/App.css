@@ -14,7 +14,7 @@ body {
   padding: 20px;
 }
 
-.score {
+.timer {
   font-size: 24px;
   font-weight: bold;
   color: #333;
@@ -33,6 +33,11 @@ h1 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #333;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
 }
 
 button {
