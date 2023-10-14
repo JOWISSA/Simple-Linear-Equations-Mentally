@@ -9,7 +9,8 @@ How to Play
     1.Click the Generate equation button to generate a new linear equation.
     2.Solve the equation and enter your answer in the input field.
     3.Click the Сheck the answer button to verify your answer.
-    4.If your answer is correct, you'll see the message YOU WIN!. Otherwise, the correct answer will be displayed.
+    4.If your answer is correct, you'll see the message YOU WIN!. Otherwise, the correct answer will 
+    be displayed.
 
 Timed Mode
 

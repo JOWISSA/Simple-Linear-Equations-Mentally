@@ -16,20 +16,20 @@ const App = () => {
 
   useEffect(() => {
     let interval;
-  
+
     if (timerActive && timer > 0) {
       interval = setInterval(() => {
         setTimer((prevTimer) => prevTimer - 1);
       }, 1000);
-    } else if (timer === 0) {
+    } else if (timer === 0 && inputValue.trim() !== secret.toString()) {
       clearInterval(interval);
       setIncorrectAnswers(prevIncorrectAnswers => prevIncorrectAnswers + 1);
     }
-  
+
     return () => {
       clearInterval(interval);
     };
-  }, [timerActive, timer]);
+  }, [timerActive, timer, inputValue, secret]);
   
 
   const generateEquation = () => {
@@ -61,7 +61,9 @@ const App = () => {
       setCorrectAnswers(correctAnswers + 1);
     } else {
       setShowSecret(secret);
-      setIncorrectAnswers(incorrectAnswers + 1);
+      if (timer > 0) {
+        setIncorrectAnswers(incorrectAnswers + 1);
+      }
     }
   };
 
