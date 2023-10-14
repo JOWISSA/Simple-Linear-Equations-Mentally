@@ -6,7 +6,7 @@ DEMO [https://jowissa.github.io/Simple-Linear-Equations-Mentally/]
 
   How to use:
 
-  1 Open the application.
-  2 Solve the equation mentally.
-  3 Input your answer.
-  4 Click "Check" to see if your answer is correct.
+  Step 1 -  Open the application.
+  Step 2 -  Solve the equation mentally.
+  Step 3 -  Input your answer.
+  Step 4 -  Click "Сheck the answer" to see if your answer is correct.
