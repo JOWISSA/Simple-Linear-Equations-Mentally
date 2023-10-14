@@ -9,7 +9,8 @@ const App = () => {
   const [secret, setSecret] = useState('');
   const [showSecret, setShowSecret] = useState(false);
   const [inputValue, setInputValue] = useState('');
-  const [score, setScore] = useState(0);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [incorrectAnswers, setIncorrectAnswers] = useState(0);
 
   const generateEquation = () => {
     const { equations, secret } = randomEquationsLvl1();
@@ -20,25 +21,36 @@ const App = () => {
   };
 
   const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+    const inputValue = e.target.value;
+    const regex = /^-?\d*$/;
+  
+    if (regex.test(inputValue)) {
+      setInputValue(inputValue);
+    }
   };
 
   const checkAnswer = () => {
     if (inputValue.trim() === secret.toString()) {
       setShowSecret('win');
-      setScore(score + 1);
+      setCorrectAnswers(correctAnswers + 1)
     } else {
       setShowSecret(secret);
-      setScore(score - 1);
+      setIncorrectAnswers(incorrectAnswers + 1);
     }
   };
   
 
   return (
     <div className="App">
-      <ScoreCounter score={score} />
+
+       <ScoreCounter 
+          correctAnswers={correctAnswers} 
+          incorrectAnswers={incorrectAnswers} 
+        />
+
       <h1>Simple Linear Equations Mentally</h1>
       <button onClick={generateEquation}>Generate equation</button>
+
       <div className="equation">{equation}</div>
       <textarea
         rows="4"
@@ -47,9 +59,9 @@ const App = () => {
         value={inputValue}
         onChange={handleInputChange}
       />
-      <button onClick={checkAnswer}>
-        Сheck the answer
-      </button>
+      
+      <button onClick={checkAnswer}>Сheck the answer</button>
+
       {showSecret === 'win' 
         ? ( 
         <div className="win-message">YOU WIN!</div>

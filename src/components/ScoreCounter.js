@@ -1,9 +1,17 @@
 import React from 'react';
 
-const ScoreCounter = ({ score }) => {
-  const scoreClassName = score >= 0 ? 'positive' : 'negative';
-
-  return <div className={`score ${scoreClassName}`}>Score: {score}</div>;
+const ScoreCounter = ({ correctAnswers, incorrectAnswers }) => {
+  return (
+    <div className="score">
+      <div className='positive'>
+        Correct Answers: {correctAnswers}
+      </div>
+    <br/>
+      <div className='negative'>
+        Incorrect Answers: {incorrectAnswers}
+      </div>
+    </div>
+  );
 };
 
 export default ScoreCounter;
