@@ -76,10 +76,10 @@ const randomEquationsLvl1 = () => {
       } else {
         if (freeValue >= 0) {
           equations = `${(factor > 0) ? `${variable} / ${factor}`: `${variable} / (${factor})`} ` 
-            + `${(freeValue) ? `- ${freeValue} ` : ''}= ${freeValue * factor + secret} / ${factor}`;
+            + `${(freeValue) ? `- ${freeValue} ` : ''}= ${secret - freeValue * factor} / ${factor}`;
         } else {
           equations = `${(factor > 0) ? `${variable} / ${factor}`: `${variable} / (${factor})`} ` 
-            + `- (${freeValue}) = ${freeValue * factor + secret} / ${factor}`;
+            + `- (${freeValue}) = ${secret - freeValue * factor} / ${factor}`;
         }
 
       }
